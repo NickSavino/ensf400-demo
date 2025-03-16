@@ -1,0 +1,7 @@
+# Ignore Gradle cache and temporary files
+.gradle
+build
+out
+*.iml
+.idea
+.git
