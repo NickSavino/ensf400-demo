@@ -26,3 +26,5 @@ If you’re using an Apple Silicon Mac (M1) and encounter an architecture compat
 docker pull --platform linux/amd64 zahmed2/ensf400-demo:145fbb6
 docker run --platform linux/amd64 -p 8080:8080 zahmed2/ensf400-demo:145fbb6
 ```
+
+Once the app is running, open http://localhost:8080 in browser
