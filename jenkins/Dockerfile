@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:lts
+FROM jenkins/jenkins:lts-jdk17
 
 USER root
 
@@ -6,6 +6,3 @@ USER root
 RUN apt-get update && \
     apt-get install -y docker.io && \
     usermod -aG docker jenkins
-
-# Switch back to Jenkins user
-USER jenkins
