@@ -7,14 +7,6 @@ pipeline {
 
     stages {
 
-        stage('Debug Git') {
-            steps {
-                sh 'ls -la'
-                sh 'pwd'
-                sh 'git status || echo "Not a git repo"'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 script {
